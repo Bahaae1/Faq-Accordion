@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    margin: 150px auto 0 auto;
+    width: 35%;
+    min-height: 350px;
+    background-color:hsl(0, 0%, 100%) ;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 0px 55px 61px 7px hsl(275, 100%, 97%);
+}
+.container .body{
+    margin: 20px;
+}
+.container .body .logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+.container .body .logo img{
+    width: 30px;
+}
+.container .body .logo h1{
+    font-size: 40px;
+    color: hsl(292, 42%, 14%);
+}
+.container .body .question .question-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(292, 42%, 14%);
+    margin:  10px 0;
+    position: relative;
+}
+.container .body .question .question-one:hover{
+    color:hsl(292, 16%, 49%) ;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+.container .body .question h4{
+    margin:10px 0;
+}
+.container .body .question img{
+    width: 22px;
+    cursor: pointer;
+}
+.container .body .question .answer {
+    font-size: 16px;
+    color: hsl(292, 16%, 49%);
+    margin: 10px 0;
+    display: none;
+    cursor: pointer;
+}
+.container .body hr{
+    border: 1px solid #eee;
+}
+
+.container .body .active .answer {
+    display: block;
+}
+
+@media (min-width : 376px) and (max-width : 768px ){
+    .container{
+        margin: 45px auto 0 auto;
+        width: 70%;
+        min-height: 327px;
+        border-radius: 10px;
+    }
+
+}
+
+@media (max-width : 375px){
+    .container{
+        margin: 39px auto 0 auto;
+        width: 85%;
+        min-height: 350px;
+        border-radius: 10px;
+    }
+
+}
